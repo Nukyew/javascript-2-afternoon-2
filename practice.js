@@ -122,8 +122,21 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
 
-//Code Here
+function divider(numbersArray) {
+  let evenNums = []
+  let oddNums= []
+  let sortedNums = [evenNums, oddNums]
+  for (let i = 0; i < numbersArray.length; i++){
+    if (numbersArray[i] % 2 === 0){
+      evenNums.push(numbersArray[i])
+    } else {
+      oddNums.push(numbersArray[i])
+    }
+  }
+  return sortedNums
+}
 
+divider(numbersArray)
 
 
 ////////// PROBLEM 7 //////////
@@ -144,9 +157,21 @@ var getRandomArbitrary = function() {
   If it is, return true, if it's not, return false
 */
 
-//Code Here
+function finder(numbers) {
+  let randomNumber = getRandomArbitrary();
+  for (let i = 0; i < numbers.length; i++) {
+    testNum = numbers[i]
+    if (randomNumber === testNum){
+    return "true";
+  }
+    else if (randomNumber !== testNum) {
+      return "false";
+}
+}
+}
 
-
+finder([1, 3, 4,])
+// I think the problem here is that randomNumber isn't checking EVERY number in the array.
 
 ////////// PROBLEM 8 //////////
 
