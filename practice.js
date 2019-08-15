@@ -171,7 +171,7 @@ function finder(numbers) {
 }
 
 finder([1, 3, 4,])
-// I think the problem here is that randomNumber isn't checking EVERY number in the array.
+// I think the problem here is that randomNumber isn't checking EVERY number in the array. Will come back to later.
 
 ////////// PROBLEM 8 //////////
 
